@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^(www\.)?oldsite\.com$ [NC]
+RewriteRule ^(.*)$ http://shawsacademy.com/$1 [L,R=301,NE]
+</IfModule>
